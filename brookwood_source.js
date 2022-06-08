@@ -139,6 +139,7 @@ $("input[data-total-contribute='true']").click(function () {
 
 			$("#upgrade-1-cb").prop("disabled", false);
 			$("#upgrade-2-cb").prop("disabled", false);
+			$("#upgrade-3-cb").prop("disabled", false);
 			$("#bond-price-cb").prop("disabled", false);
 			$("#viewGameNowBtn").prop("disabled", false);
 			$("#myPlace-cb").prop("disabled", false);
@@ -156,6 +157,7 @@ $("input[data-total-contribute='true']").click(function () {
 
 			$("#upgrade-1-cb").attr("data-price", $(this).data("upgrade-1-price"));
 			$("#upgrade-2-cb").attr("data-price", $(this).data("upgrade-2-price"));
+			$("#upgrade-3-cb").attr("data-price", $(this).data("upgrade-3-price"));
 			$("#bond-price-cb").attr("data-price", $(this).data("bond-price"));
 			$('#myPlace-cb').attr('data-price', $(this).data('myplace-price'));
 
@@ -163,16 +165,18 @@ $("input[data-total-contribute='true']").click(function () {
 
 			$("#upgrade-1-price-label").html("R " + numberWithSpaces($(this).data("upgrade-1-price")));
 			$("#upgrade-2-price-label").html("R " + numberWithSpaces($(this).data("upgrade-2-price")));
+			$("#upgrade-3-price-label").html("R " + numberWithSpaces($(this).data("upgrade-3-price")));
 
 			// Set upgrade data image attributes
 			$("#upgrade-1-cb").attr("data-upgrade-image", $(this).attr("data-upgrade-1-image"));
 			$("#upgrade-2-cb").attr("data-upgrade-image", $(this).attr("data-upgrade-2-image"));
+			$("#upgrade-3-cb").attr("data-upgrade-image", $(this).attr("data-upgrade-3-image"));
 
 			$("#upgrade-1-cb").attr("data-upgrade-both-image", $(this).attr("data-upgrade-both-image"));
-			$("#upgrade-2-cb").attr("data-upgrade-both-image", $(this).attr("data-upgrade-both-image"));
+			$("#upgrade-3-cb").attr("data-upgrade-both-image", $(this).attr("data-upgrade-both-image"));
 
 			$("#upgrade-1-cb").attr("data-base-unit-image", $(this).attr("data-base-image"));
-			$("#upgrade-2-cb").attr("data-base-unit-image", $(this).attr("data-base-image"));
+			$("#upgrade-3-cb").attr("data-base-unit-image", $(this).attr("data-base-image"));
 
 			$("#bond-price-label").html("R " + numberWithSpaces($(this).data("bond-price")));
 			$("#myplace-price-label").html("R " + numberWithSpaces($(this).data('myplace-price')));
@@ -290,6 +294,9 @@ function addOnSelected ( addonCheck ) {
 					}
 					document.getElementById("xrai-iframe").contentWindow.postMessage("turnUpgradeOn", "*");
 					break;
+				case "upgrade-3":
+					//Uhm...
+					break;
 			}
 			if ( gameLoaded ) {
 				//Add addon switch here
@@ -343,6 +350,8 @@ function addOnSelected ( addonCheck ) {
 						$("#appliance-basic-cb").click();
 					}
 					document.getElementById("xrai-iframe").contentWindow.postMessage("turnUpgradeOff", "*");
+					break;
+				case "upgrade-3":
 					break;
 			}
 			if ( gameLoaded ) {
