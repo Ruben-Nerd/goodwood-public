@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b1dd30d-2bae-4219-bed7-2e81450cdac1" name="Default Changelist" comment="Change total number of addons to 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brookwood_source.js" beforeDir="false" afterPath="$PROJECT_DIR$/brookwood_source.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654716711289</updated>
-      <workItem from="1654716713143" duration="1998000" />
+      <workItem from="1654716713143" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="Remove tests">
       <created>1654716813584</created>
