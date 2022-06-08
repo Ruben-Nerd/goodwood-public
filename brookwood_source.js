@@ -1,3 +1,4 @@
+//Test
 $(document).ready(function () {
 	$("#incanda-cb").prop("disabled", true),
 		$("#elk-cb").prop("disabled", true),
