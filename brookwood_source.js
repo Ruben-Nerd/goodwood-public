@@ -1,4 +1,5 @@
 console.log("Starting");
+console.log("Starting 2");
 $(document).ready(function () {
 	$("#incanda-cb").prop("disabled", true),
 		$("#elk-cb").prop("disabled", true),
