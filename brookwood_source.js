@@ -9,7 +9,7 @@ $(document).ready(function () {
 		});
 });
 
-let totalNumberOfAddons = 2;
+let totalNumberOfAddons = 3;
 
 var addonsSelected = [],
 	additionalAddonsSelected = [];
