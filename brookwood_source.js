@@ -1,5 +1,3 @@
-console.log("Starting");
-console.log("Starting 2");
 $(document).ready(function () {
 	$("#incanda-cb").prop("disabled", true),
 		$("#elk-cb").prop("disabled", true),
@@ -11,7 +9,7 @@ $(document).ready(function () {
 		});
 });
 
-let totalNumberOfAddons = 2;
+let totalNumberOfAddons = 3;
 
 var addonsSelected = [],
 	additionalAddonsSelected = [];
